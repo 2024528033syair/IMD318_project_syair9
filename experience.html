@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Still dont remember him?... Dont worry i got you...</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/736x/de/4d/e4/de4de4c579e42e5c353915441c3c9a34.jpg">
+    <style>
+        :root {
+            --pure-white: #ffffff;
+            --void-black: #050505;
+            --liminal-grey: #666666;
+            --stark-border: #111111;
+        }
+
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            color: var(--pure-white);
+            letter-spacing: 1px;
+            
+            
+            background: 
+                linear-gradient(rgba(5, 5, 5, 0.88), rgba(5, 5, 5, 0.95)), 
+                url('https://i.pinimg.com/736x/fe/db/6e/fedb6ef7f79526bb780fb0db0fb6dfdc.jpg') no-repeat center center fixed;
+            background-size: cover;
+           
+        }
+
+        .unsettling-frame {
+            background-color: rgba(11, 11, 11, 0.9); /* */
+            border: 1px solid var(--stark-border);
+            backdrop-filter: blur(2px); 
+            box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.95);
+        }
+
+        .nav-item {
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.4s ease;
+        }
+
+        .nav-item:hover {
+            letter-spacing: 4px;
+            background-color: var(--pure-white) !important;
+            color: var(--void-black) !important;
+        }
+
+        .glitch-text {
+            text-shadow: 1px 0px 0px rgba(255,0,0,0.2), -1px 0px 0px rgba(0,0,255,0.2);
+        }
+    </style>
+    <script>
+        
+        function initiateTemporalTracker() {
+            const now = new Date();
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            let seconds = now.getSeconds();
+            minutes = formatDigits(minutes);
+            seconds = formatDigits(seconds);
+            document.getElementById('elapsed-tracker').innerHTML = hours + " : " + minutes + " : " + seconds;
+            setTimeout(initiateTemporalTracker, 1000);
+        }
+        function formatDigits(val) {
+            if (val < 10) { val = "0" + val };
+            return val;
+        }
+    </script>
+</head>
+<body onload="initiateTemporalTracker()" style="display: flex; flex-direction: column; min-height: 100vh;">
+
+    
+    <div class="w3-bar w3-black w3-border-bottom w3-border-dark-grey" style="background-color: var(--void-black) !important;">
+        <a href="index.html" class="w3-bar-item w3-button nav-item">.00 / Home</a>
+        <a href="biodata.html" class="w3-bar-item w3-button nav-item">.01 / Registration</a>
+        <a href="experience.html" class="w3-bar-item w3-button nav-item w3-white w3-text-black">.02 / Continuity</a>
+        <a href="education.html" class="w3-bar-item w3-button nav-item">.03 / Trajectory</a>
+        <a href="family.html" class="w3-bar-item w3-button nav-item">.04 / Affiliation</a>
+        <a href="gallery.html" class="w3-bar-item w3-button nav-item">.05 / Documentation</a>
+    </div>
+
+    
+    <main class="w3-content w3-padding" style="max-width:1100px; margin-top:60px; flex: 1; width: 100%;">
+        <div class="w3-container w3-card unsettling-frame w3-padding-48">
+            
+            
+            <div class="w3-right w3-padding w3-black w3-border" style="border-color: #222 !important; margin-bottom: 20px;">
+                <p class="w3-tiny w3-text-grey" style="margin: 0; letter-spacing: 1px;">ELAPSED SYSTEM DRIFT: <span id="elapsed-tracker" class="w3-text-white" style="font-weight: bold;"></span></p>
+            </div>
+
+            <h2 class="w3-large" style="font-weight: 300; letter-spacing: 4px; margin-bottom: 30px;">Still dont remember him?.. Dont worry i got you :).. </h2>
+            <hr style="border-top: 1px solid #1a1a1a; margin-bottom: 40px;">
+            
+            
+            <div class="w3-row-padding">
+                
+               
+                <div class="w3-col l7 m12 w3-margin-bottom">
+                    <h4 class="w3-small w3-text-grey" style="letter-spacing: 2px; font-weight: 600; margin-bottom: 20px;">[ RECORDED CHRONO-TRACKS ]</h4>
+                    
+                    <div class="w3-container w3-leftbar w3-border-light-grey w3-padding w3-margin-bottom" style="background-color: rgba(255,255,255,0.01);">
+                        <h5 class="w3-medium" style="margin: 0; font-weight: 400; letter-spacing: 1px;">Institutional Project Supervisor / UiTM</h5>
+                        <span class="w3-tiny w3-text-grey">DIPLOMA SCIENCE INFORMATION (JSI110): 2024 - PRESENT</span>
+                        <p class="w3-small w3-text-grey" style="line-height: 1.8; margin-top: 8px;">a student who pursues his academic at UITM Segamat, personally its his choice lmfao</p>
+                    </div>
+
+                    <div class="w3-container w3-leftbar w3-border-dark-grey w3-padding" style="background-color: rgba(255,255,255,0.01);">
+                        <h5 class="w3-medium" style="margin: 0; font-weight: 400; letter-spacing: 1px;">Logistics Assistant / Event Program</h5>
+                        <span class="w3-tiny w3-text-grey">INTERVAL GRID: 25/06/2026</span>
+                        <p class="w3-small w3-text-grey" style="line-height: 1.8; margin-top: 8px;">He is assigned as logistic bureau for upcoming event</p>
+                    </div>
+                </div>
+                
+                
+                <div class="w3-col l5 m12">
+                    
+                    
+                    <div class="data-segment w3-margin-bottom">
+                        <h4 class="w3-small w3-text-white" style="letter-spacing: 2px; font-weight: 600; margin-top: 0;">PROFILED ARCHITECTURE [SKILLS]</h4>
+                        <p class="w3-tiny w3-text-grey" style="margin-bottom: 15px;">Operational capabilities within simulated parameters:</p>
+                        
+                        <div class="w3-margin-bottom">
+                            <span class="w3-tiny w3-text-grey">INTERFACE MANIPULATION (XHTML / CSS3)</span>
+                            <div class="w3-grey" style="height:2px; background-color: #222 !important;"><div class="w3-white" style="height:2px;width:90%"></div></div>
+                        </div>
+                        <div class="w3-margin-bottom">
+                            <span class="w3-tiny w3-text-grey">MUSIC COMPOSER, SOUND DESIGN (MUSIC COMPOSER)</span>
+                            <div class="w3-grey" style="height:2px; background-color: #222 !important;"><div class="w3-white" style="height:2px;width:85%"></div></div>
+                        </div>
+                        <div>
+                            <span class="w3-tiny w3-text-grey">CREATIVE ART</span>
+                            <div class="w3-grey" style="height:2px; background-color: #222 !important;"><div class="w3-white" style="height:2px;width:60%"></div></div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="data-segment">
+                        <h4 class="w3-small w3-text-white" style="letter-spacing: 2px; font-weight: 600; margin-top: 0;">COGNITIVE FIXATIONS [INTERESTS]</h4>
+                        <p class="w3-tiny w3-text-grey" style="margin-bottom: 15px;">Persistent anomalies detected in attention cycles:</p>
+                        
+                        <span class="w3-tag w3-black w3-border w3-border-dark-grey w3-tiny w3-margin-bottom" style="letter-spacing: 1px; color: #ccc !important;">LIMINAL SPACE ARCHITECTURE</span>
+                        <span class="w3-tag w3-black w3-border w3-border-dark-grey w3-tiny w3-margin-bottom" style="letter-spacing: 1px; color: #ccc !important;">ANALOG DOCUMENTARY REPLICAS</span>
+                        <span class="w3-tag w3-black w3-border w3-border-dark-grey w3-tiny w3-margin-bottom" style="letter-spacing: 1px; color: #ccc !important;">UI ACCESSIBILITY ANALYSIS</span>
+                        <span class="w3-tag w3-black w3-border w3-border-dark-grey w3-tiny" style="letter-spacing: 1px; color: #ccc !important;">SYSTEM ARCHIVING LOGIC</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    
+    <footer class="w3-container w3-padding-32 w3-center" style="border-top: 1px solid #111;">
+        <p class="w3-tiny w3-text-grey" style="letter-spacing: 3px;">&copy; 2026 ARCHIVE INDIVIDUAL. 𝙝𝙚 𝙞𝙨 𝙜𝙤𝙤𝙙 𝙞𝙨𝙣𝙩?
+</p>
+    </footer>
+
+</body>
+</html>
+```S
